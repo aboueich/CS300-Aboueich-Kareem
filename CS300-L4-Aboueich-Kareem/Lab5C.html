@@ -1,0 +1,19 @@
+<HEAD>
+<SCRIPT>
+	function add(x, y){ return x + y; }
+	function subtract(x, y){ return x - y; }
+	function multiply(x, y){ return x * y; }
+	function divide(x, y){ return x / y; }
+</SCRIPT>
+</HEAD>
+<BODY>
+<SCRIPT>
+	x = eval(prompt("Enter number: "));
+	symbol = prompt("Enter operation: ");
+	y = eval(prompt("Enter another number: "));
+	if(symbol == '+'){ alert("Result: " + add(x, y)); }
+	if(symbol == '-'){ alert("Result: " + subtract(x, y)); }
+	if(symbol == '*'){ alert("Result: " + multiply(x, y)); }	
+	if(symbol == '/'){ alert("Result: " + divide(x, y)); }
+</SCRIPT>
+</BODY>
